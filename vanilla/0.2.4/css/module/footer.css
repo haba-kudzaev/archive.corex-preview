@@ -1,0 +1,12 @@
+/*!
+ * @author      rx1310 <rx1310@inbox.ru>
+ * @copyright   Copyright (c) o1310, 2020
+ * @license     MIT License
+ */
+
+footer {
+  background: var(--clrBgFooter);
+  border-top: 0.1em solid var(--clrOutline);
+  padding: 0.5em 1.8em;
+  margin-top: 1em;
+}
