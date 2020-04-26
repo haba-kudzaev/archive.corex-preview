@@ -1,0 +1,93 @@
+/*!
+ * @author      rx1310 <rx1310@inbox.ru>
+ * @copyright   Copyright (c) o1310, 2020
+ * @license     MIT License
+ */
+
+/* GalleryView */
+
+.view-gallery {
+  background: inherit;
+  border: 0.1em solid var(--clrOutline);
+  list-style: none;
+  padding: 0.8em;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -webkit-border-radius: var(--border-radius);
+     -moz-border-radius: var(--border-radius);
+          border-radius: var(--border-radius);
+}
+
+.layout-card .view-gallery {
+  border: none;
+  margin: 0 -1.5em 1em;
+  padding: 0 1.5em 1em;
+  -webkit-border-radius: 0;
+     -moz-border-radius: 0;
+          border-radius: 0;
+}
+
+.view-gallery > li {
+  display: inline-block; 
+}
+
+/* ListView */
+
+.view-list {
+  background: var(--clrBgCard);
+  border: 0.1em solid var(--clrOutline);
+  list-style: none;
+  -webkit-border-radius: var(--border-radius);
+  -moz-border-radius: var(--border-radius);
+  border-radius: var(--border-radius);
+}
+
+.view-list li {
+  padding: 1em 1.4em;
+  margin-left: -2.9em;
+  cursor: pointer;
+}
+
+.view-list li:not(.head) {
+  border-bottom: 1px solid var(--clrOutline);
+  border-bottom-style: dotted;
+}
+
+.view-list li:active {
+  background: var(--clrSelected);
+}
+
+.view-list li:first-child:not(.head) {
+  margin-top: 0.3em;
+}
+
+.view-list li:last-child {
+  border-style: none;
+  margin-bottom: 0.3em;
+}
+
+.view-list li.head {
+  background: transparent !important;
+  color: var(--clrPrimary);
+  cursor: default;
+  font: bold;
+  padding-bottom: 0.5em;
+}
+
+.view-list li a {
+  color: inherit;
+  display: block;
+  text-decoration: none;
+}
+
+.view-list li:active a {
+  color: inherit;
+}
+
+.view-list li p {
+  margin-top: 0.4em;
+  margin-bottom: 0;
+  font-size: smaller;
+  -moz-opacity: 0.6;
+  opacity: 0.6;
+}

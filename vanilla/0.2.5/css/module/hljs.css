@@ -1,0 +1,76 @@
+/*!
+ * @author      rx1310 <rx1310@inbox.ru>
+ * @copyright   Copyright (c) o1310, 2020
+ * @license     MIT License
+ * @based       android-studio.css (by Pedro Oliveira <kanytu@gmail.com>)
+ */
+
+ .hljs {
+  color: #a9b7c6;
+  border: 0.1em solid var(--clrOutline);
+  display: block;
+  overflow-y: hidden;
+  padding: 0.5em 1em;
+  white-space: pre;
+   -moz-tab-size: 2;
+    -ms-tab-size: 2;
+     -o-tab-size: 2;
+	      tab-size: 2;
+  -webkit-border-radius: var(--border-radius);
+     -moz-border-radius: var(--border-radius);
+          border-radius: var(--border-radius);
+}
+
+.hljs-number,
+.hljs-literal,
+.hljs-symbol,
+.hljs-bullet {
+  color: #6897BB;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-deletion {
+  color: #cc7832;
+}
+
+.hljs-variable,
+.hljs-template-variable,
+.hljs-link {
+  color: #629755;
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: #808080;
+}
+
+.hljs-meta {
+  color: #bbb529;
+}
+
+.hljs-string,
+.hljs-attribute,
+.hljs-addition {
+  color: #6A8759;
+}
+
+.hljs-section,
+.hljs-title,
+.hljs-type {
+  color: #ffc66d;
+}
+
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class {
+  color: #e8bf6a;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}

@@ -1,0 +1,333 @@
+/*!
+ * @author      rx1310 <rx1310@inbox.ru>
+ * @copyright   Copyright (c) o1310, 2020
+ * @license     MIT License
+ */
+
+@import url(module/alert.css);
+@import url(module/backdrop.css);
+@import url(module/button.css);
+@import url(module/checkbox.css);
+@import url(module/footer.css);
+@import url(module/grid.css);
+@import url(module/hljs.css);
+@import url(module/layout.css);
+@import url(module/navdrawer.css);
+@import url(module/table.css);
+@import url(module/toolbar.css);
+@import url(module/typography.css);
+@import url(module/view.css);
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+.COREX_UI_THEME_LIGHT {
+  --clrFnt: #232F34;
+  --clrFntAlert_d: #B71C1C;
+  --clrFntAlert_w: #af5c13;
+  --clrFntAlert_s: #1B5E20;
+  --clrFntAlert_i: #0D47A1;
+  --clrPrimary: #4385F5;
+  --clrSecondary: #77A7FB;
+  --clrBg: #FFF;
+  --clrBgFooter: #eee;
+  --clrBgNavDrawer: #FFF;
+  --clrBgToolbar: #FFF;
+  --clrBgCard: #FFF;
+  --clrBgAlert: #ccc;
+  --clrBgAlert_d: #FFEBEE;
+  --clrBgAlert_w: #eee8b6;
+  --clrBgAlert_s: #E8F5E9;
+  --clrBgAlert_i: #E3F2FD;
+  --clrBgScrollbar: #eee;
+  --clrScrollbar: #bdbdbd;
+  --clrOutline: #EEE;
+  --clrIconNavDrawer: #727272;
+  --clrSelected: #F2F2F2;
+  --shadowGlobal: 0 0.15em 1em -0.2em rgba(0, 0, 0, .2);
+  --shadowButton: 0 0.15em 0.8em -0.2em rgba(0, 0, 0, .4);
+  --shadowButton-active: 0 0.15em 0.8em -0.1em rgba(0, 0, 0, .8);
+}
+
+.COREX_UI_THEME_DARK {
+  --clrFnt: #E8EAED;
+  --clrFntAlert_d: #FFEBEE;
+  --clrFntAlert_w: #FFF9C4;
+  --clrFntAlert_s: #E8F5E9;
+  --clrFntAlert_i: #E3F2FD;
+  --clrPrimary: #8AB4F8;
+  --clrSecondary: #617EAB;
+  --clrBg: #000;
+  --clrBgFooter: #121212;
+  --clrBgNavDrawer: #000;
+  --clrBgToolbar: #000;
+  --clrBgCard: #000;
+  --clrBgAlert: #1A1A1A;
+  --clrBgAlert_d: #B71C1C;
+  --clrBgAlert_w: #F57F17;
+  --clrBgAlert_s: #1B5E20;
+  --clrBgAlert_i: #0D47A1;
+  --clrBgScrollbar: #1F1F1F;
+  --clrScrollbar: #999999;
+  --clrOutline: #1F1F1F;
+  --clrIconNavDrawer: #F1F3F4;
+  --clrSelected: #1A1A1A;
+  --shadowGlobal: none;
+  --shadowButton: none;
+  --shadowButton-active: none;
+}
+
+
+.dummy {
+  background: var(--clrBg);
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+}
+
+* {
+  -webkit-touch-callout: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+       box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  /* variables */
+  --border-radius: 0.5em;
+  --scrollbarBg: var(--clrBgScrollbar);
+  --scrollbarClr: var(--clrScrollbar);
+}
+
+::-moz-selection {
+  background: var(--clrSecondary);
+  color: White;
+  text-shadow: none;
+}
+
+::selection {
+  background: var(--clrSecondary);
+  color: White;
+  text-shadow: none;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+@-o-viewport {
+  width: device-width;
+}
+
+@viewport {
+  width: device-width;
+}
+
+@media (min-width: 425px) {
+
+  body {
+    scrollbar-width: thin;
+    scrollbar-color: var(--scrollbarClr) var(--scrollbarBg);
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--scrollbarBg);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbarClr);
+    border: 3px solid var(--scrollbarBg);
+    -webkit-border-radius: var(--border-radius);
+    -moz-border-radius: var(--border-radius);
+    border-radius: var(--border-radius);
+  }
+
+  .toolbar {
+    bottom: initial;
+    top: 0 !important;
+  }
+
+  .toolbar ~ .container {
+    margin-top: 5em;
+  }
+
+  .toolbar ~ footer {
+    margin-bottom: 0;
+  }
+
+  .COREX_UI_THEME_DARK .toolbar {
+    border-bottom: 0.1em solid var(--clrOutline);
+    border-top: none;
+  }
+
+}
+
+body {
+  background: var(--clrBg);
+  color: var(--clrFnt);
+  margin: auto;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: "Open Sans", sans-serif;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid var(--clrOutline);
+  margin: 1em 0;
+  padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+input:not([type="button"]),
+textarea {
+  color: inherit;
+  background-color: inherit !important;
+  border: 0.05em solid var(--clrOutline);
+  display: block;
+  font-size: inherit;
+  padding: .7em;
+  width: 100%;
+  -webkit-border-radius: var(--border-radius);
+  -moz-border-radius: var(--border-radius);
+  border-radius: var(--border-radius);
+}
+
+input:not([type="button"]):focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--clrPrimary);
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:visited {
+  color: var(--clrPrimary);
+  text-decoration: underline;
+}
+
+a:active {
+  color: var(--clrSecondary);
+}
+
+blockquote {
+  position: relative;
+  font-size: 24px;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.35;
+  letter-spacing: 0.08em;
+}
+
+blockquote:before {
+  position: absolute;
+  left: -0.5em;
+  content: '“';
+}
+
+blockquote:after {
+  content: '”';
+  margin-left: -0.05em;
+}
+
+ul,
+ol {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+}
+
+img {
+  overflow: none;
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: middle;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+img[data-src] {
+  -moz-opacity: 0;
+  opacity: 0;
+}
+
+img.circle {
+  -webkit-border-radius: 100% !important;
+  -moz-border-radius: 100% !important;
+  border-radius: 100% !important;
+}
+
+img.round {
+  -webkit-border-radius: 0.5em !important;
+  -moz-border-radius: 0.5em !important;
+  border-radius: 0.5em !important;
+}
+
+img.oval {
+  -webkit-border-radius: 1.2em !important;
+  -moz-border-radius: 1.2em !important;
+  border-radius: 1.2em !important;
+}
+
+.disabled,
+.navdrawer > p {
+  pointer-events: none;
+  cursor: not-allowed;
+  filter: alpha(opacity=50);
+  -moz-opacity: 0.50;
+  opacity: 0.50;
+}
+
+.hide {
+  visibility: hidden;
+  display: none;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+a,
+textarea,
+input:not([type="button"]),
+.table-hover tbody tr,
+.view-list li:not(.head),
+.navdrawer .item {
+  -webkit-transition: 0.3s ease-out 0s;
+  -moz-transition: 0.3s ease-out 0s;
+  -o-transition: 0.3s ease-out 0s;
+  transition: 0.3s ease-out 0s;
+}
