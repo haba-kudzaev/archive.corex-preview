@@ -1,101 +1,147 @@
-* {
+/*!
+ * @author      rx1310 <rx1310@inbox.ru>
+ * @copyright   Copyright (c) o1310, 2020
+ * @license     MIT License
+ */
+
+*,
+*::before,
+*::after {
   -webkit-touch-callout: none;
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
-	   -o-box-sizing: border-box;
-		  box-sizing: border-box;
-  -webkit-text-size-adjust: 100%;
-      -ms-text-size-adjust: 100%;
+       -o-box-sizing: border-box;
+          box-sizing: border-box;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   outline: none;
-  -webkit-tap-highlight-color: rgba(0,0,0,0); 
 }
 
-@-ms-viewport { width: device-width; }
-@-o-viewport { width: device-width; }
-@viewport { width: device-width; }
+@-ms-viewport {
+  width: device-width;
+}
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@-o-viewport {
+  width: device-width;
+}
 
-html, body {
-  background: White;
-  color: #202125;
-  padding: auto;
-  margin: auto;
+@viewport {
+  width: device-width;
+}
+
+body {
+  color: #212426;
+  background-color: #ffffff;
   font-family: "Open Sans", sans-serif;
-  text-align: center;
+  margin: 0;
+  line-height: 1.15;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+}
+
+.dummy {
+  background: #ffffff;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
 }
 
 hr {
-  display: block;
-  height: 1px;
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
   border: 0;
-  border-top: 1px solid #eee;
-  margin: 2.5em 0;
-  padding: 0; 
+  border-top: 1px solid gainsboro;
 }
 
 a {
+  background-color: transparent;
   color: #4385F5;
-}
-
-button {
-  color: White;
-  background: #4385F5;
-  padding: 0.5em 0.8em;
-  border: none;
-  text-align: center;
-  text-transform: uppercase;
-  -webkit-appearance: button;
-  -webkit-box-shadow: var(--box-shadow);
-     -moz-box-shadow: var(--box-shadow);
-          box-shadow: var(--box-shadow);
-		  --box-shadow: 0 0.15em 0.5em -0.2em rgba(0, 0, 0, .5);
-  -webkit-border-radius: var(--border-radius);
-     -moz-border-radius: var(--border-radius);
-          border-radius: var(--border-radius);
-		  --border-radius: 0.4em;
-}
-
-button a {
-  color: inherit !important;
   text-decoration: none;
 }
 
-button:hover,
-button:active {
+.main {
+  padding: 1em;
+}
+
+.main-box {
+  background-color: #ffffff;
+  padding: .5em 1.2em;
+  margin-bottom: .8em;
+  -webkit-box-shadow: 0 0.15em 0.8em -0.2em rgba(0, 0, 0, .4);
+     -moz-box-shadow: 0 0.15em 0.8em -0.2em rgba(0, 0, 0, .4);
+          box-shadow: 0 0.15em 0.8em -0.2em rgba(0, 0, 0, .4);
+  -webkit-border-radius: 0.5em;
+     -moz-border-radius: 0.5em;
+          border-radius: 0.5em;
+}
+
+.main-box {
   -webkit-transition-duration: .8s;
      -moz-transition-duration: .8s;
        -o-transition-duration: .8s;
           transition-duration: .8s;
 }
 
-button:active {
-  background-color: #337AFB;
-  -webkit-box-shadow: var(--box-shadow);
-     -moz-box-shadow: var(--box-shadow);
-          box-shadow: var(--box-shadow);
-		  --box-shadow: 0 0.15em 0.8em -0.2em rgba(0, 0, 0, 1);
+.main-box:active {
+  background-color: #4385F5;
+  color: white;
+  padding: .5em 1.2em;
+  margin-bottom: .8em;
+  -webkit-box-shadow: 0 0.15em 0.8em -0.2em rgba(0, 0, 0, .8);
+     -moz-box-shadow: 0 0.15em 0.8em -0.2em rgba(0, 0, 0, .8);
+          box-shadow: 0 0.15em 0.8em -0.2em rgba(0, 0, 0, .8);
 }
 
-.main {
-  padding: 1.5em;
-}
-
-.main p {
-  opacity: 0.6;
+.main-box--red:active {
+  background-color: #f54343;
 }
 
 .footer {
-  margin-bottom: 2.5em;
+  border-top: 1px solid gainsboro;
+  padding: .6em 1em;
+  text-align: center;
 }
 
-img {
-  overflow: none;
-  max-width: 100%;
-  max-height: 100%;
-  vertical-align: middle;
+button {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+[hidden] {
+  display: none;
 }
