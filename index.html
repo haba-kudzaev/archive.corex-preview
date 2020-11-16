@@ -5,30 +5,37 @@
 		<meta http-equiv="x-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="styles.css" rel="stylesheet">
-		<script>
-			window.onload = function() {
-				document.getElementsByClassName('dummy')[0].style.visibility = 'hidden';
-			};
-		</script>
 		<title>CoreX Preview's</title>
 	</head>
 	<body>
 
-		<div class="dummy"></div>
+		<header>
+			<h1><br>&#128075;<br><br>Hello, world!</h1>
+			<p>Страница для просмотра демо-версий сборок различных версий CoreX</p>
+		</header>
 
-		<main class="main">
-			<div class="main-box" onclick="location.href='index-web.html';">
-				<h2>WebCoreX</h2>
-				<p>Минималистичный, простой, легкий и красивый фреймворк для верстки простых веб-сайтов, написанный с использованием SASS.</p>
-			</div>
+		<main>
+
 			<div class="main-box" onclick="location.href='index-vanilla.html';">
-				<h2>VanillaCoreX</h2>
+				<h2>VanillaCoreX <sup class="tag tag-red">deprecated</sup></h2>
 				<p>Минималистичный, простой, легкий и красивый фреймворк для верстки простых веб-сайтов, написанный с использованием чистого JavaScript и CSS.</p>
 			</div>
+
+			<div class="main-box" onclick="location.href='index-web.html';">
+				<h2>WebCoreX <sup class="tag tag-red">deprecated</sup></h2>
+				<p>Минималистичный, простой, легкий и красивый фреймворк для верстки простых веб-сайтов, написанный с использованием SASS.</p>
+			</div>
+
+			<div class="main-box" onclick="location.href='index-corex.html';">
+				<h2>CoreX <sup class="tag tag-green">active</sup></h2>
+				<p>Переписанная версия WebCoreX на SASS.</p>
+			</div>
+
 		</main>
 
-		<footer class="footer">
-			<p><b>Страница для просмотра демо-версий сборок различных версий CoreX</b></p>
+		<hr>
+
+		<footer>
 			<p><a href="https://github.com/o1310/CoreX">github repo</a> / <a href="https://t.me/rx1310_dev">telegram</a></p>
 			<p><small>Copyright &copy; 2020, rx1310 (o1310)</small></p>
 		</footer>

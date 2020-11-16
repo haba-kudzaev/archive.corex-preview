@@ -1,0 +1,116 @@
+/*!
+ * @author      rx1310 <rx1310@inbox.ru>
+ * @copyright   Copyright (c) o1310, 2020
+ * @license     MIT License
+ */
+
+ *,
+ *::before,
+ *::after {
+   -webkit-touch-callout: none;
+   -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+        -o-box-sizing: border-box;
+           box-sizing: border-box;
+   -webkit-user-select: none;
+      -moz-user-select: none;
+       -ms-user-select: none;
+           user-select: none;
+   outline: none;
+ }
+ 
+ @-ms-viewport {
+   width: device-width;
+ }
+ 
+ @-o-viewport {
+   width: device-width;
+ }
+ 
+ @viewport {
+   width: device-width;
+ }
+ 
+ body {
+   color: #212426;
+   background-color: #ffffff;
+   font-family: "Open Sans", sans-serif;
+   margin: 0;
+   line-height: 1.15;
+   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+   -webkit-text-size-adjust: 100%;
+      -moz-text-size-adjust: 100%;
+       -ms-text-size-adjust: 100%;
+           text-size-adjust: 100%;
+ }
+ 
+ .dummy {
+   background: #ffffff;
+   position: fixed;
+   left: 0px;
+   top: 0px;
+   width: 100%;
+   height: 100%;
+   z-index: 1000;
+ }
+ 
+ hr {
+   box-sizing: content-box;
+   height: 0;
+   overflow: visible;
+   border: 0;
+   border-top: 1px solid gainsboro;
+ }
+ 
+ a {
+   background-color: transparent;
+   color: #4385F5;
+   text-decoration: none;
+ }
+ 
+ .main {
+   padding: 1em;
+ }
+ 
+ .main-box {
+   background-color: #ffffff;
+   padding: .5em 1.2em;
+   margin-bottom: .8em;
+   -webkit-box-shadow: 0 0.15em 0.8em -0.2em rgba(0, 0, 0, .4);
+      -moz-box-shadow: 0 0.15em 0.8em -0.2em rgba(0, 0, 0, .4);
+           box-shadow: 0 0.15em 0.8em -0.2em rgba(0, 0, 0, .4);
+   -webkit-border-radius: 0.5em;
+      -moz-border-radius: 0.5em;
+           border-radius: 0.5em;
+ }
+ 
+ .main-box {
+   -webkit-transition-duration: .8s;
+      -moz-transition-duration: .8s;
+        -o-transition-duration: .8s;
+           transition-duration: .8s;
+ }
+ 
+ .main-box:active {
+   background-color: #4385F5;
+   color: white;
+   padding: .5em 1.2em;
+   margin-bottom: .8em;
+   -webkit-box-shadow: 0 0.15em 0.8em -0.2em rgba(0, 0, 0, .8);
+      -moz-box-shadow: 0 0.15em 0.8em -0.2em rgba(0, 0, 0, .8);
+           box-shadow: 0 0.15em 0.8em -0.2em rgba(0, 0, 0, .8);
+ }
+ 
+ .main-box--red:active {
+   background-color: #f54343;
+ }
+ 
+ .footer {
+   border-top: 1px solid gainsboro;
+   padding: .6em 1em;
+   text-align: center;
+ }
+ 
+ small {
+   opacity: 0.5;
+ }

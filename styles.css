@@ -4,6 +4,8 @@
  * @license     MIT License
  */
 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 *,
 *::before,
 *::after {
@@ -19,21 +21,13 @@
   outline: none;
 }
 
-@-ms-viewport {
-  width: device-width;
-}
-
-@-o-viewport {
-  width: device-width;
-}
-
-@viewport {
-  width: device-width;
-}
+@-ms-viewport { width: device-width; }
+@-o-viewport { width: device-width; }
+@viewport { width: device-width; }
 
 body {
   color: #212426;
-  background-color: #ffffff;
+  background-color: #ebebeb;
   font-family: "Open Sans", sans-serif;
   margin: 0;
   line-height: 1.15;
@@ -44,14 +38,14 @@ body {
           text-size-adjust: 100%;
 }
 
-.dummy {
-  background: #ffffff;
-	position: fixed;
-	left: 0px;
-	top: 0px;
-	width: 100%;
-	height: 100%;
-	z-index: 1000;
+a,
+a:visited {
+  color: #000000;
+}
+
+a:hover,
+a:active {
+  color: #8a8a8a;
 }
 
 hr {
@@ -59,17 +53,19 @@ hr {
   height: 0;
   overflow: visible;
   border: 0;
-  border-top: 1px solid gainsboro;
+  border-top: 1px solid #cecece;
 }
 
+main {
+  padding: 1.4em;
+}
+
+.main-box,
 a {
-  background-color: transparent;
-  color: #4385F5;
-  text-decoration: none;
-}
-
-.main {
-  padding: 1em;
+  -webkit-transition-duration: .6s;
+     -moz-transition-duration: .6s;
+       -o-transition-duration: .6s;
+          transition-duration: .6s;
 }
 
 .main-box {
@@ -84,15 +80,9 @@ a {
           border-radius: 0.5em;
 }
 
-.main-box {
-  -webkit-transition-duration: .8s;
-     -moz-transition-duration: .8s;
-       -o-transition-duration: .8s;
-          transition-duration: .8s;
-}
-
-.main-box:active {
-  background-color: #4385F5;
+.main-box:active,
+.main-box:hover {
+  background-color: #000000;
   color: white;
   padding: .5em 1.2em;
   margin-bottom: .8em;
@@ -101,16 +91,34 @@ a {
           box-shadow: 0 0.15em 0.8em -0.2em rgba(0, 0, 0, .8);
 }
 
-.main-box--red:active {
-  background-color: #f54343;
-}
-
-.footer {
-  border-top: 1px solid gainsboro;
+header,
+footer {
   padding: .6em 1em;
   text-align: center;
 }
 
-small {
-  opacity: 0.5;
+.tag {
+  background-color: #212426;
+  color: white;
+  padding: .2em .4em;
+  font-size: small;
+  -webkit-border-radius: 0.5em;
+     -moz-border-radius: 0.5em;
+          border-radius: 0.5em;
+}
+
+.tag-red {
+  background-color: #B71C1C;
+}
+
+.tag-green {
+  background-color: #1B5E20;
+}
+
+.tag-blue {
+  background-color: #0D47A1;
+}
+
+.tag-orange {
+  background-color: #af5c13;
 }
