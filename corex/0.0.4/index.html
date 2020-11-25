@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/corex.css" rel="stylesheet">
+    <title>CoreX</title>
+  </head>
+  <body>
+
+    <!-- Шапка страницы -->
+    <header>
+      <h1>Шапка страницы</h1>
+      <p>Header содержит вводное или навигационное содержимое для описания страницы. Он обычно располагается в верхней части раздела, но это не является обязательным.</p>
+    </header>
+
+    <!-- Хлебные крошки -->
+    <ul class="crx-breadcrumbs">
+      <li><a href="https://rx1310.github.io/corex-preview/">Домашняя страница</a></li>
+      <li>CoreX</li>
+    </ul>
+
+    <div class="container">
+
+      <div class="row">
+
+        
+        <div class="col-12">
+          
+        </div>
+
+        <!-- Карточки -->
+        <div class="col-12">
+          <h2>Карточки</h2>
+        </div>
+        <div class="col-md-6">
+          <p>Центрирование текста по левому краю:</p>
+          <div class="crx-card">
+            <a class="crx-card-link" href="https://github.com/rx1310"></a>
+            <img class="crx-card-image" src="../image.png" alt="Test image">
+            <div class="crx-card-body">
+              <h2>Заголовок</h2>
+              <p>Прежде всего начало повседневной работы по формированию позиции способствует повышению качества поставленных обществом и правительством задач.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <p>Центрирование текста по центру:</p>
+          <div class="crx-card" crx-card="centered">
+            <a class="crx-card-link" href="https://github.com/rx1310"></a>
+            <img class="crx-card-image" src="../image.png" alt="Test image">
+            <div class="crx-card-body">
+              <h2>Заголовок</h2>
+              <p>Разнообразный и богатый опыт начало повседневной работы по формированию позиции обеспечивает широкому кругу специалистов систему массового участия.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Кнопки -->
+        <div class="col-md-4">
+          <h2>Кнопки</h2>
+          <button class="crx-button">Обычная кнопка</button>
+          <button class="crx-button" crx-button="borderless">Кнопка без контура</button><br><br>
+          <button class="crx-button crx-button-block">Кнопка-блок</button><br><br>
+          <button class="crx-button crx-button-block" crx-button="borderless">Кнопка-блок</button>
+        </div>
+
+        <!-- Список -->
+        <div class="col-md-4">
+          <h2>Список</h2>
+          <ul class="crx-list">
+            <li>
+              Microsoft
+              <p>MS Windows, Visual Studio (VSCode), Microsoft OneNote, PowerPoint, Microsoft Word, etc.</p>
+            </li>
+            <li>Google</li>
+            <li>
+              Apple
+              <p>iOS, iPhone, iPad, iMac, MacBook, macOS, AppStore, etc.</p>
+            </li>
+            <li>IBM</li>
+            <li>Amazon</li>
+          </ul>
+        </div>
+
+        <!-- Gallery -->
+        <div class="col-md-4">
+          <h2>Gallery</h2>
+          <ui class="crx-gallery">
+            <li><img src="../image.png" alt=""></li>
+            <li><img src="../image.png" alt=""></li>
+            <li><img src="../image.png" alt=""></li>
+            <li><img src="../image.png" alt=""></li>
+            <li><img src="../image.png" alt=""></li>
+            <li><img src="../image.png" alt=""></li>
+            <li><img src="../image.png" alt=""></li>
+          </ui>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Хлебные крошки (снизу) -->
+    <ul class="crx-breadcrumbs" crx-breadcrumbs="bottom">
+      <li><a href="https://rx1310.github.io/corex-preview/">Домашняя страница</a></li>
+      <li>CoreX</li>
+    </ul>
+
+    <!-- Подвал сайта -->
+    <footer>
+      <p>Footer - это блок в нижней части страницы. Содержит полезную, но не первостепенную информацию. В футер можно вынести: копирайт, название студии, которая разрабатывала сайт, контакты. Иногда в футере дублируются пункты меню.</p>
+      <p><a href="http://t.me/rx1310_dev">Developer</a> / <a href="https://github.com/o1310/CoreX">GitHub</a></p>
+      <p class="crx-text--muted">Copyright &copy; 2020, rx1310 (o1310)</p>
+    </footer>
+
+  </body>
+</html>
